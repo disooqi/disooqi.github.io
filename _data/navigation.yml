@@ -5,21 +5,21 @@
 
 - name: Resume
   text: RESUME
-  link: /resume.html
+  link: /resume
   icon: icon-book-open
 
 - name: Publications
   text: PUBLICATIONS
-  link: /publications.html
+  link: /publications
   icon: icon-note
 
 - name: Projects
   text: RESEARCH PROJECTS
-  link: /projects.html
+  link: /projects
   icon: icon-rocket
 
 - name: Portfolio
   text: PORTFOLIO
-  link: /portfolio.html
+  link: /portfolio
   icon: icon-badge
 
