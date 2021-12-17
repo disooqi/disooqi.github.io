@@ -1,0 +1,60 @@
+---
+layout: default
+title: Projects
+---
+
+    <!-- MAIN CONTENT -->
+    <div class="col-md-8">
+        <div class="inside-sec">
+            <!-- BIO AND SKILLS -->
+            <h5 class="tittle">RESEARCH PROJECTS</h5>
+
+            <!-- Blog -->
+            <section class="blog blog-page padding-20 padding-top-50 padding-bottom-50 ">
+                {% for project in site.projects %}
+                <article>
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-lg-12 text-center">
+                                <img class="img-responsive" style="height: 250px;"
+                                     src="{{ project.image }}" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="post-info">
+                        <div class="post-in">
+                        <span class="tittle-post"> {{ project.title }} <a class="btn-1 pull-right" style="margin: 0 !important;"
+                                                           href="#" target="_blank">{{ project.name }} Demo</a></span>
+                            <div class="extra"><span><i class="icon-calendar"></i>FROM: {{ project.from }} &nbsp;&nbsp;-&nbsp;&nbsp; TO: {{ project.to }}</span>
+                                &nbsp;&nbsp;&nbsp;&nbsp;<span>
+                        <a class="btn btn-link" href="#" target="_blank">
+                            <i class="icon-link"></i> {{ project.link }}
+                        </a>
+                        </span>
+                            </div>
+                            <p>{{ project.description }}</p>
+                            <a href="{{ project.url }}" class="btn-1">My ROLE IN THE PROJECT<i
+                                    class="fa fa-angle-right"></i></a>
+                        </div>
+                    </div>
+                </article>
+                {% endfor %}
+                <!-- WISE -->
+                <!-- FARASA -->
+                <!-- DIALECTID -->
+                <!-- NATASY -->
+                <!-- buzzdiggr -->
+                <!-- TAPS -->
+                <!-- ArabAgent -->
+                <!-- ITS -->
+
+                <!-- Pagination -->
+                <!--<ul class="pagination">-->
+                <!--<li><a href="#">1</a></li>-->
+                <!--<li><a href="#">2</a></li>-->
+                <!--<li><a href="#">3</a></li>-->
+                <!--<li><a href="#">Next</a></li>-->
+                <!--</ul>-->
+            </section>
+        </div>
+    </div>
