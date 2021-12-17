@@ -1,6 +1,15 @@
 collections:
   projects:
     output: true
+    order:
+      - wise.html
+      - farasa.html
+      - qmdis.html
+      - natasy.html
+      - buzzdiggr.html
+      - taps.html
+      - arabagent.html
+      - its.html
 
 defaults:
   - scope:
