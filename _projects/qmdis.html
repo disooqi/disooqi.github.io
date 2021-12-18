@@ -1,0 +1,288 @@
+---
+layout: default
+name: DialectID
+title: QCRI-MIT Live Arabic Dialect Identification System (<span class="text-lowercase">or simply</span> D<span class="text-lowercase">ialect</span>ID)
+from: October 2017
+to: September 2018
+description: >
+    DialectID offers an identification system for live speech into five Arabic dialects
+    namely; Modern Standard Arabic (MSA) - which is the de facto of the Arabic language,
+    Egyptian dialect, Levantine dialect, Moroccan dialect, and Gulf dialect.
+    DialectID is a collaboration between Qatar Computing Research Institute (QCRI) and <a href="https://www.csail.mit.edu/" target="_blank"> MIT CSAIL</a>.
+link: https://dialectid.qcri.org/
+demo-link: https://dialectid.qcri.org/
+image: /assets/images/qmdis-blog.png
+---
+
+<!-- MAIN CONTENT -->
+<div class="col-md-8">
+    <div class="inside-sec blog">
+        <!-- BIO AND SKILLS -->
+        <h5 class="tittle"><a href="/projects" class="disooqi"> Projects</a>
+            &gt; QCRI-MIT Advanced Dialect Identification System (D<span class="text-lowercase">ialect</span>ID)
+        </h5>
+
+        <!-- Blog -->
+        <article class="blog-post width-100 padding-25">
+            <!--<div class="post-img">-->
+            <!--&lt;!&ndash;<img src="images/img-1.jpg" alt=""> &ndash;&gt;-->
+            <!--<span class="date-in">27 JAN</span>-->
+            <!--</div>-->
+
+            <!--&lt;!&ndash; BLOG DETAIL &ndash;&gt;-->
+            <!--<h4 class="font-normal">Faster Response</h4>-->
+            <!--<span class="post-bt">by <span class="text-color-primary">Admin</span></span>-->
+            <!--<ul class="post-info">-->
+            <!--<li><i class="fa fa-comments-o"></i>97</li>-->
+            <!--<li><i class="fa fa-eye"></i>565</li>-->
+            <!--<li><i class="fa fa-bookmark-o"></i>Photography</li>-->
+            <!--<li></li>-->
+            <!--</ul>-->
+            <p style="">At Qatar Computing Research Institute (QCRI), I have worked in collaboration with <a
+                    class="btn-link"
+                    href="https://www.csail.mit.edu/" target="_blank"> MIT CSAIL</a> on the DialectID project that aims
+                to
+                automatic dialect identification in Arabic Broadcast Speech. Arabic Dialect Identification (ADI) is
+                similar
+                to the more general problem of Language Identification (LID) except that it is more challenging than LID
+                because
+                of the small and subtle differences between the various dialects of the same language. I worked with Dr.
+                Ahmed Ali and
+                Dr. James Glass to tackle the problem of classifying a given utterance into one of five dialects spoken
+                in the Arab world namely,
+                Egyptian dialect, Levantine dialect, Gulf dialect, North African (Tunisian, Moroccan, Algerian, and
+                Lybian) dialect, or
+                Modern standard Arabic (MSA).
+
+
+            </p>
+            <p>
+                Our best results for ADI gives us an accuracy of 78% overall accuracy across the five dialects using the
+                2017 Multi-Genre Broadcast challenge (MGB-3) data. In order to achieve a robust dialect identification,
+                we explored using Siamese neural network models to learn similarity and dissimilarities among Arabic
+                dialects, as well as i-vector post-processing to adapt domain mismatches. Both acoustic and linguistic
+                features were used.
+
+
+                <!--However, for the live demo, we limit our system to the lexical features extracted-->
+                <!--from our Arabic speech recognition system. Our system detects the spoken dialect using the most recent-->
+                <!--10 words and aggregate the results with sliding window every time the ASR system marks the text output-->
+                <!--as final, which is typically happens when there is at least a silence of 500m sec. By using the most-->
+                <!--recent ten words, our demo is capable of dealing with code-switching between Dialectal Arabic (DA) and-->
+                <!--MSA, which happens often in Arabic speech as argued in our QMDIS Interspeech 2017 paper.-->
+
+
+                <!--The project offers an identification system for live speech into five Arabic dialects-->
+                <!--namely; Modern Standard Arabic (MSA) - which is the de facto of the Arabic language,-->
+                <!--Egyptian dialect, Levantine dialect, Moroccan dialect, and Gulf dialect.-->
+
+                <!--resulting on a live speech Identification system. <a href="https://dialectid.qcri.org/" class="btn-link" role="button" target="_blank"> You-->
+                <!--can try it here</a>.-->
+            </p>
+            <h5 class="margin-top-20 margin-bottom-0">The Live Demo</h5>
+            <p>
+                My contribution to the project was mainly engineering resulting on a live identification system for the
+                Arabic speech. I deployed
+                two models, one that depends on lexical features and the second trained on only acoustic features. The
+                system is capable to scale to
+                thousands of parallel users. I used Kaldi, the popular Speech Recognition system, to produce the
+                transcriptions of the utterances.
+
+            </p>
+
+            <div class="row">
+                <div class="col-lg-12">
+                    <img class="img-responsive margin-top-10"
+                         src="/assets/images/qmdis-system.png"
+                         alt="">
+                </div>
+            </div>
+            <p>
+                As user press the start button, the DialectID system keep receiving raw audio data from the speaker with
+                no action taken. The system
+                triggers the identification process only when Kaldi manages to produce transcription. The transcription
+                is then used to generate the
+                lexical features. Meanwhile, the resulting raw audio data is used to produce the acoustic features. Both
+                of the features are then sent to models
+                for identification and the result is sent back to the user. Each feature set
+
+            </p>
+
+
+            <div class="row">
+                <div class="col-md-4">
+                    <p>
+                        is then passed to the right model resulting on probabilities of the dialects. of the features
+                        are then sent to models
+                        for identification and the result is sent back to the user. Each feature set is then passed to
+                        the right
+                        model resulting on probabilities of the dialects.
+                    </p>
+                </div>
+                <div class="col-md-8">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/BrZZ_7JIrJo?rel=0"
+                                allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+
+
+            <h5 class="margin-top-30 margin-bottom-0">Publications</h5>
+            <!-- Publications -->
+            <div class="panel-group accordion padding-20" id="accordion">
+                <div class="panel panel-default">
+                    <div class="row">
+                        <div class="col-sm-1">
+                            <!-- PANEL HEADING -->
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#accordion3" href="#collapseOne"
+                                       class="">* </a>
+                                </h4>
+                            </div>
+                        </div>
+
+                        <!-- Skillls Bars -->
+                        <div class="col-sm-11">
+                            <p><strong>Mohamed Eldesouki</strong>
+                                , Suwon Shon, and Ahmed Ali, (2018),
+                                <i>QCRI-MIT Live Arabic
+                                    Dialect Identification System</i>
+                                , <strong>
+                                    International Conference on Acoustics, Speech, and Signal Processing (ICASSP)
+                                </strong>, Calgary, Canada.</p>
+
+                            <!--<div class="progress">-->
+                            <!--<div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;"> <span class="sr-only">60% Complete</span> </div>-->
+                            <!--</div>-->
+
+                            <!-- Skillls Text -->
+                            <div id="collapseOne" class="panel-collapse collapse in" aria-expanded="tr">
+                                <div class="panel-body">
+                                    <p>
+                                        <a href="https://github.com/qcri/dialectID" target="_blank"
+                                           class="btn btn-danger">
+                                            <i class="fa fa-github"></i> Code
+                                        </a>
+                                        <a href="https://people.csail.mit.edu/swshon/pdf/adi_system_2018.pdf"
+                                           target="_blank" class="btn btn-warning">
+                                            <i class="fa fa-file-powerpoint-o"></i> Poster
+                                        </a>
+                                        <a href="https://dialectid.qcri.org/"
+                                           target="_blank" class="btn btn-primary">
+                                            <i class="fa fa-play-circle-o"></i> Demo
+                                        </a>
+                                        <!--<a href="#" class="btn btn-success"><i class="fa fa-file-pdf-o"></i> Paper</a>-->
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!--<div class="auther-name text-center margin-top-50">-->
+            <!--<h6 class="font-12px margin-top-20 margin-bottom-10">WHITE SHADOW WALKER</h6>-->
+            <!--<span class="font-16px font-crimson font-italic">Writer/Personal blog</span>-->
+            <!--</div>-->
+
+
+            <!--<div class="next-prev">-->
+            <!--<div class="row">-->
+            <!--<div class="col-md-6 text-left"><a href="#." class="font-16px font-crimson text-uppercase"><i-->
+            <!--class="fa fa-long-arrow-left margin-right-15"></i> PREVIOUS Article</a></div>-->
+            <!--<div class="col-md-6 text-right"><a href="#." class="font-16px font-crimson text-uppercase">Next-->
+            <!--Article<i class="fa fa-long-arrow-right margin-left-15"></i></a></div>-->
+            <!--</div>-->
+            <!--</div>-->
+
+
+            <!--<div class="comments">-->
+
+            <!--&lt;!&ndash; Main Heading &ndash;&gt;-->
+            <!--<div class="heading-side-bar margin-bottom-50 margin-top-100">-->
+            <!--<h4>Comment (37)</h4>-->
+            <!--</div>-->
+            <!--<ul>-->
+
+            <!--&lt;!&ndash; Comments &ndash;&gt;-->
+            <!--<li class="margin-bottom-30">-->
+            <!--<div class="media">-->
+            <!--<div class="media-left">-->
+            <!--<div class="avatar"><img src="images/avatar-1.jpg" alt=""></div>-->
+            <!--</div>-->
+            <!--<div class="media-body">-->
+            <!--<div class="a-com"><span class="a-name text-color-primary">JAMMIE LANDING </span><span-->
+            <!--class="date">24.03.2015 at 10:21</span>-->
+            <!--<p class="margin-top-20">“Quando feugait duo ei, te erant corpora interpretaris eos.-->
+            <!--Illud accommodare vituperatoribus an mea. Erat mazim animal-->
+            <!--at nam, eam te doctus evertitur, sed decore ornatus”</p>-->
+            <!--<a href="#." class="text-right"> REPLAY <i class="fa fa-reply"></i></a></div>-->
+            <!--</div>-->
+            <!--</div>-->
+            <!--</li>-->
+
+            <!--&lt;!&ndash; Comments Replay &ndash;&gt;-->
+            <!--<li class="com-reply">-->
+            <!--<div class="media">-->
+            <!--<div class="media-left">-->
+            <!--<div class="avatar"><img src="images/avatar-2.jpg" alt=""></div>-->
+            <!--</div>-->
+            <!--<div class="media-body">-->
+            <!--<div class="a-com"><span class="a-name ">JAMMIE LANDING </span><span class="date">24.03.2015 at 10:21</span>-->
+            <!--<p class="margin-top-20">“Quando feugait duo ei, te erant corpora interpretaris eos.-->
+            <!--Illud accommodare vituperatoribus an mea. Erat mazim animal-->
+            <!--at nam, eam te doctus evertitur, sed decore ornatus”</p>-->
+            <!--<a href="#." class="text-right"> REPLAY <i class="fa fa-reply"></i></a></div>-->
+            <!--</div>-->
+            <!--</div>-->
+            <!--</li>-->
+            <!--<li class="text-center more-comments"><a href="#.">MORE COMMENT <i class="fa fa-angle-down"></i></a>-->
+            <!--</li>-->
+            <!--</ul>-->
+
+            <!--&lt;!&ndash; Comments Form &ndash;&gt;-->
+            <!--<div class="comment-form">-->
+            <!--&lt;!&ndash; Main Heading &ndash;&gt;-->
+            <!--<div class="heading-side-bar margin-bottom-50 margin-top-80">-->
+            <!--<h4>Post to Reply</h4>-->
+            <!--</div>-->
+            <!--<form>-->
+            <!--<ul class="row">-->
+            <!--<li class="col-sm-4">-->
+            <!--<label>*NAME-->
+            <!--<input class="form-control" type="text" placeholder="">-->
+            <!--</label>-->
+            <!--</li>-->
+            <!--<li class="col-sm-4">-->
+            <!--<label>*EMAIL ADDRESS-->
+            <!--<input class="form-control" type="text" placeholder="">-->
+            <!--</label>-->
+            <!--</li>-->
+            <!--<li class="col-sm-4">-->
+            <!--<label> WEBSITE-->
+            <!--<input class="form-control" type="text" placeholder="">-->
+            <!--</label>-->
+            <!--</li>-->
+            <!--<li class="col-sm-12">-->
+            <!--<label> SUBJECT-->
+            <!--<input class="form-control" type="text" placeholder="">-->
+            <!--</label>-->
+            <!--</li>-->
+            <!--<li class="col-sm-12">-->
+            <!--<textarea placeholder="YOUR MESSAGE"></textarea>-->
+            <!--</li>-->
+            <!--<li class="col-sm-12">-->
+            <!--<button type="submit" class="btn btn-dark">POST COMMENT</button>-->
+            <!--</li>-->
+            <!--</ul>-->
+            <!--</form>-->
+            <!--</div>-->
+            <!--</div>-->
+
+
+        </article>
+    </div>
+</div>

@@ -1,0 +1,25 @@
+- name: Home
+  text: ABOUT ME
+  link: /
+  icon: icon-user
+
+- name: Resume
+  text: RESUME
+  link: /resume
+  icon: icon-book-open
+
+- name: Publications
+  text: PUBLICATIONS
+  link: /publications
+  icon: icon-note
+
+- name: Projects
+  text: RESEARCH PROJECTS
+  link: /projects
+  icon: icon-rocket
+
+- name: Portfolio
+  text: PORTFOLIO
+  link: /portfolio
+  icon: icon-badge
+

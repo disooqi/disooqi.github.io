@@ -1,45 +1,204 @@
-<html>
-<head>
-<style type="text/css">
+---
+layout: default
+title: Home
+---
 
-#iframe-container-1 {
-        width: 100%;
-        border: none;
-        margin: 0 0 0 0;
-}
+    <!-- MAIN CONTENT -->
+    <div class="col-md-8">
 
-#iframe-container-2 {
-        width: 100%;
-        border: none;
-}
+        <!-- ABOUT ME -->
+        <div class="inside-sec">
+            <!-- BIO AND SKILLS -->
+            <h5 class="tittle">About Me</h5>
 
-</style>
-</head>
+            <!-- Blog -->
+            <section class="about-me padding-top-10">
 
-<body style="margin:0;padding:0;">
+                <!-- Personal Info -->
+                <ul class="personal-info">
+                    <li>
+                        <p><span> Location</span> Montreal, QC, Canada </p>
+                    </li>
+                    <li>
+                        <p><span> Experience</span> 11 Years </p>
+                    </li>
+                    <li>
+                        <p><span> Degree</span> MSc. in Computer Science </p>
+                    </li>
+                    <!--<li>-->
+                    <!--<p> <span> Career Level</span> Mid-Level </p>-->
+                    <!--</li>-->
+                    <li>
+                        <p><span> Phone</span> +1 (438) 526-8875 </p>
+                    </li>
+                    <!--<li>-->
+                    <!--<p> <span> FAX</span> (800) 123-4568 </p>-->
+                    <!--</li>-->
+                    <li>
+                        <p><span> Personal E-mail</span> <a href="#."> mohamed@eldesouki.ca</a></p>
+                    </li>
+                    <!--<li>-->
+                    <!--<p> <span> Website</span><a href="#."> example.com </a></p>-->
+                    <!--</li>-->
+                </ul>
 
-<!-- Iframe #1 -->
-<iframe id="iframe-container-1" src="http://mohamed.eldesouki.ca"></iframe>
 
-<!-- Iframe #2 -->
-<!-- <iframe id="iframe-container-2" src="iframe2.html"></iframe> -->
+                <!-- I’m A Research Associate and A Software Engineer -->
+                <h5 class="tittle">I’m A PhD student and A Software Engineer</h5>
+                <div class="padding-20">
+                    <p>Mohamed Eldesouki is a PhD student with a senior engineering skills and a
+                        wide technical and academic background in the fields of Arabic Language Technologies (ALT) and
+                        Machine Learning (ML) with a broad experience covering a diverse set of software development
+                        tools, languages and methodologies, gathered throughout almost 11 years of experience. <br>
+                        <br>
+                        Mohamed has participated in designing, implementing and maintaining of NLP-related project
+                        such as Search Engines, Content-based Recommendation Systems, Auto-complete and correction
+                        for mobile devices, and Intelligent Tutoring Systems (ITS) for both Arabic and English content.
+                        <br>
+                        <br>
+                        With a strong academic foundation in Information Retrieval (IR) and Information Extraction
+                        (IE) gained through the conducted research activities and studies of the MASTER’S DEGREE and
+                        deep linguistic analysis, and Natural language Processing NLP through his work at
+                        <a class="text-primary" href="https://www.hbku.edu.qa/en/staff/mohamed-eldesouki"
+                           target="_blank">
+                            Qatar Computing Research Institute (QCRI)</a>.
+                        <br>
+                        <br>
+                    </p>
+                </div>
+                <!-- Current Projects -->
+                <h5 class="tittle">Current Projects</h5>
+                <div class="row padding-20 margin-top-50">
+
+                    <!-- Icon -->
+<!--{#                    <div class="col-md-4 text-center">#}-->
+<!--{#                        <a href="http://cods.encs.concordia.ca/wise/" target="_blank">#}-->
+<!--{#                            <div class="icon-box i-large ib-black">#}-->
+<!--{#                                <div class="ib-icon" style="background: white !important; border: white; width: 100px;">#}-->
+<!--{#                                    <img style="width: 90px; height: 40px;"#}-->
+<!--{#                                         src="/assets/images/WISE.png"/></div>#}-->
+<!--{#                                <div class="ib-info">#}-->
+<!--{#                                    <h4 class="h6">WISE</h4>#}-->
+<!--{#                                    <p>A Natural Language Platform For Querying RDF-Based Graphs</p>#}-->
+<!--{#                                </div>#}-->
+<!--{#                            </div>#}-->
+<!--{#                        </a>#}-->
+<!--{#                    </div>#}-->
+
+                    <!-- Icon -->
+                    <div class="col-md-4 text-center">
+                        <a href="https://github.com/disooqi/Natasy/" target="_blank">
+                            <div class="icon-box i-large ib-black">
+                                <div class="ib-icon" style="background: white !important; border: white; width: 100px;">
+                                    <img style="width: 90px; height: 90px;"
+                                         src="/assets/images/natasy2.png"/></div>
+                                <div class="ib-info">
+                                    <h4 class="h6">Natasy</h4>
+                                    <p>Natasy Deep Learning Library</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
 
 
-<script>
-        
-window.addEventListener('message', function(e) {
-        var data = e.data.split('-'),
-                scroll_height = data[0],
-                iframe_id = data[1];
+                    <!-- Icon -->
+                </div>
 
-        // Check message from which iframe
-        if(iframe_id == 'iframe1')
-                document.getElementById('iframe-container-1').style.height = scroll_height + 'px'; 
-        else if(iframe_id == 'iframe2')
-                document.getElementById('iframe-container-2').style.height = scroll_height + 'px'; 
-} , false);
+                <!-- Icon Row -->
+                <!--<div class="row padding-20 margin-bottom-50"> -->
+                <!---->
+                <!--&lt;!&ndash; Icon &ndash;&gt;-->
+                <!--<div class="col-md-4">-->
+                <!--<div class="icon-box i-large ib-black">-->
+                <!--<div class="ib-icon"> <i class="fa fa-diamond"></i> </div>-->
+                <!--<div class="ib-info">-->
+                <!--<h4 class="h6">Unique Design</h4>-->
+                <!--<p>We have created the new macbook psd version with scalable vector shapes.</p>-->
+                <!--</div>-->
+                <!--</div>-->
+                <!--</div>-->
+                <!---->
+                <!--&lt;!&ndash; Icon &ndash;&gt;-->
+                <!--<div class="col-md-4">-->
+                <!--<div class="icon-box i-large ib-black">-->
+                <!--<div class="ib-icon"> <i class="fa fa-server"></i> </div>-->
+                <!--<div class="ib-info">-->
+                <!--<h4 class="h6">Demos Layout</h4>-->
+                <!--<p>We have created the new macbook psd version with scalable vector shapes.</p>-->
+                <!--</div>-->
+                <!--</div>-->
+                <!--</div>-->
+                <!---->
+                <!--&lt;!&ndash; Icon &ndash;&gt;-->
+                <!--<div class="col-md-4">-->
+                <!--<div class="icon-box i-large ib-black">-->
+                <!--<div class="ib-icon"> <i class="fa fa-scissors"></i> </div>-->
+                <!--<div class="ib-info">-->
+                <!--<h4 class="h6">Clean Code</h4>-->
+                <!--<p>We have created the new macbook psd version with scalable vector shapes.</p>-->
+                <!--</div>-->
+                <!--</div>-->
+                <!--</div>-->
+                <!--</div>-->
 
-</script>
+                <!-- Recent Publications -->
+                <h5 class="tittle">Recent Updates</h5>
+                <!--Click on the "Plus Sign" to expand any item below and show more details.-->
+                <div class="panel-group accordion padding-20" id="accordion2">
+                <div class="box" >
+                    <!--<h2>Education</h2>-->
+                    <ul id="education" class="clearfix">
+                        <li>
+                            <div class="year pull-left">10<sup>th</sup>April</div>
+                            <div class="description pull-right">
+                                <h3>Journal Paper Accepted</h3>
+                                <p>The article <a class="text-primary" target="_blank" href="https://doi.org/10.1017/S1351324920000078">Effective Multi
+                                DialectalArabic POS Tagging</a> has been accepted into <a class="text-primary" href="https://www.cambridge.org/core/journals/natural-language-engineering" target="_blank">Natural Language Engineering</a> Journal.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="year pull-left">1<sup>st</sup> April</div>
+                            <div class="description pull-right">
+                                <h3>Demo Submission</h3>
+                                <p>I have submitted a demo paper to
+                                    <a class="text-primary" href="https://vldb2020.org/call4demo.html" target="_blank">VLDB 2020 (Demonstration track).</a>.</p>
+                            </div>
+                        </li>
+<!--{#                        <li>#}-->
+<!--{#                            <div class="year pull-left">25<sup>th</sup>Feb</div>#}-->
+<!--{#                            <div class="description pull-right">#}-->
+<!--{#                                <h3>Emergence of WISE</h3>#}-->
+<!--{#                                <p>As part of my PhD research, I started developing WISE. WISE is A Natural Language#}-->
+<!--{#                                    Platform For Querying RDF-Based Graphs. I also provided a#}-->
+<!--{#                                    <a class="text-primary" href="#" target="_blank">Web interface</a>#}-->
+<!--{#                                    for WISE.</p>#}-->
+<!--{#                            </div>#}-->
+<!--{#                        </li>#}-->
+                        <li>
+                            <div class="year pull-left">Sept. 2019</div>
+                            <div class="description pull-right">
+                                <h3>Demo Presented</h3>
+                                <p>My <a class="text-primary" href="https://farspeech.qcri.org/" target="_blank">FarSpeech Demo</a> Has been
+                                    presented at
+                                    <a class="text-primary" href="https://www.interspeech2019.org/calls/papers/" target="_blank">
+                                        InterSpeech Conference 2019: Show & Tell Contribution</a>.</p>
+                            </div>
+                        </li>
 
-</body>
-</html>
+                        <li>
+                            <div class="year pull-left">May 2019</div>
+                            <div class="description pull-right">
+                                <h3>Attendance of PyCon 2019</h3>
+                                <p> I have attended
+                                    <a class="text-primary" href="https://us.pycon.org/2019/about/" target="_blank">
+                                        PyCon 2019
+                                    </a> conference which took place in Cleveland, Ohio. PyCon is the largest annual gathering for the community using and developing the open-source Python programming language.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                </div>
+            </section>
+        </div>
+    </div>
