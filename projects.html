@@ -24,8 +24,11 @@ permalink: /projects
                     </div>
                     <div class="post-info">
                         <div class="post-in">
-                        <span class="tittle-post"> {{ project.title }} <a class="btn-1 pull-right" style="margin: 0 !important;"
-                                                           href="#" target="_blank">{{ project.name }} Demo</a></span>
+                        <span class="tittle-post"> {{ project.title }} 
+                            {% if project.demo-link %}
+                            <a class="btn-1 pull-right" style="margin: 0 !important;" href="{{ project.demo-link }}" target="_blank">{{ project.name }} Demo</a>
+                            {% endif %}
+                        </span>
                             <div class="extra"><span><i class="icon-calendar"></i>FROM: {{ project.from }} &nbsp;&nbsp;-&nbsp;&nbsp; TO: {{ project.to }}</span>
                                 &nbsp;&nbsp;&nbsp;&nbsp;<span>
                         <a class="btn btn-link" href="#" target="_blank">
