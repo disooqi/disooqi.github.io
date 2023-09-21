@@ -1,0 +1,68 @@
+a.disooqi  {
+    color: #346abb;
+
+    text-decoration: underline overline !important;
+
+}
+
+a.disooqi:hover  {
+    /*background-color: #f0f0f0;*/
+    /*color: olive;*/
+
+    text-decoration: none !important;
+    /*padding: 5px;*/
+}
+
+p.disooqi {
+    /*font-size: 16px !important;*/
+}
+
+ul.disooqi li{
+    line-height: 22px;
+    /*font-size: 16px;*/
+}
+
+body {
+  background: black;
+}
+.menu-ext {
+  background-color: #004A7F;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  border: none;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 20px;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  -webkit-animation: glowing 3500ms infinite;
+  -moz-animation: glowing 3500ms infinite;
+  -o-animation: glowing 3500ms infinite;
+  animation: glowing 3500ms infinite;
+}
+@-webkit-keyframes glowing {
+  0% { background-color: inherit; -webkit-box-shadow: 0 0 3px transparent; }
+  50% { background-color: rgba(52, 106, 187,0.3); -webkit-box-shadow: 0 0 40px rgba(52, 106, 187,0.7); }
+  100% { background-color: inherit; -webkit-box-shadow: 0 0 3px transparent; }
+}
+
+@-moz-keyframes glowing {
+  0% { background-color: inherit; -moz-box-shadow: 0 0 3px transparent; }
+  50% { background-color: rgba(52, 106, 187,0.3); -moz-box-shadow: 0 0 40px rgba(52, 106, 187,0.7); }
+  100% { background-color: inherit; -moz-box-shadow: 0 0 3px transparent; }
+}
+
+@-o-keyframes glowing {
+  0% { background-color: inherit; box-shadow: 0 0 3px transparent; }
+  50% { background-color: rgba(52, 106, 187,0.3); box-shadow: 0 0 40px rgba(52, 106, 187,0.7);; }
+  100% { background-color: inherit; box-shadow: 0 0 3px transparent; }
+}
+
+@keyframes glowing {
+  0% { background-color: inherit; box-shadow: 0 0 3px transparent; }
+  20% { background-color: rgba(52, 106, 187,0.3); box-shadow: 0 0 40px rgba(52, 106, 187,0.7); }
+  100% { background-color: inherit; box-shadow: 0 0 3px transparent; }
+}
+

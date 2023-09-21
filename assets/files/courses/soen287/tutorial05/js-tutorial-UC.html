@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>	
+	<head>
+		<title>JavaScript Tutorial for UC</title>
+	</head>
+	<body>
+		<p id="tryreplace">Mr. Blie has 45 blie Horses. He works for BBC, CNN and Fox news. He is 52 years old.</p>
+		<button onclick="myReplaceFunc();">Try Replace</button>
+		<button onclick='arrayToString(["Apple", "Orange", "Banana"]);'>Try arrayToString function</button>
+		<button onclick="getDigits(getMrBlueSen());">Try getDigits()</button>
+		<button onclick='getCurrentDate();'>Try getCurrentDate()</button>
+		
+		<p id="myfruits"></p>
+		
+		<p id="myformat"></p>
+		<p id="intlformat"></p>
+		<script>
+			
+			
+			function myReplaceFunc() {
+				var str = document.getElementById("tryreplace").innerHTML;
+				var str2 = str.replace(/i/g, "u");
+				
+				alert(str2);
+				
+			}
+			
+			function arrayToString(arr) {
+				//document.getElementById("myfruits").innerHTML = arr;
+				//document.getElementById("myfruits").innerHTML = arr.join(" and ");
+				document.getElementById("myfruits").innerHTML = arr.concat();
+				// alert(arr);
+			}
+			
+			function getMrBlueSen(){
+				return document.getElementById("tryreplace").innerHTML;
+			}
+			
+			function getDigits(myStr) {
+			
+				var matches = myStr.match(/\d/g);
+				var num = matches.join("");
+				alert(num);
+			}
+			
+			function getCurrentDate() {
+				var date = new Date();
+				
+				var days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+				var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+				
+				document.getElementById("myformat").innerHTML = 
+				days[date.getDay()] + ", " + months[date.getMonth()] + " " + date.getDate()+ ", "+ date.getFullYear();
+				
+				// For advanced users (not required in the course)
+				// check https://stackoverflow.com/questions/3552461/how-to-format-a-javascript-date?page=1&tab=votes#tab-top
+				// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/DateTimeFormat#examples
+				var options = {weekday: 'long', year: 'numeric', month: 'long', day: 'numeric'};
+				var date_formated = new Intl.DateTimeFormat('en-CA', options).format(date);
+				document.getElementById("intlformat").innerHTML = date_formated;
+				
+			}
+			
+			
+		</script>
+	</body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Layout Example</title>
+		<style>
+			div {
+				background-color: gray;
+			}
+			
+			#container {
+				position: relative;
+				height: 400px;
+				width: 400px;
+				
+				/* 
+				border-width: 1px;
+				border-style: solid;
+				border-color: black;
+				*/
+				
+				border: 1px solid black;
+				margin: auto;
+			}
+			
+			#header {
+				position: absolute;
+				background-color: red;
+				width: 300px;
+				height: 50px;
+				left: 50px;
+				
+			}
+			
+			#nav {
+				position: absolute;
+				background-color: blue;
+				width: 50px;
+				height: 400px;
+			}
+			
+			#article {
+				position: absolute;
+				background-color: yellow;
+				width: 100px;
+				height: 300px;
+				left: 50px;
+				top: 50px;
+			}
+			
+			#article2 {
+				position: absolute;
+				background-color: cyan;
+				width: 100px;
+				height: 300px;
+				left: 150px;
+				top: 50px;
+			}
+			
+			#article3 {
+				position: absolute;
+				background-color: rgb(200,100, 55);
+				width: 100px;
+				height: 300px;
+				left: 250px;
+				top: 50px;
+			}
+			
+			#aside {
+				position: absolute;
+				background-color: green;
+				width: 50px;
+				height: 400px;
+				left: 350px;
+				
+			}
+			#footer {
+				position: absolute;
+				background-color: rgb(200,0, 255);
+				width: 300px;
+				height: 50px;
+				bottom: 0px;
+				left: 50px;
+			}
+			
+		</style>
+	</head>
+	<body>
+		<div id="container">
+			<div id="header"></div>
+			<div id="nav"></div>
+			<div id="article"></div>
+			<div id="article2"></div>
+			<div id="article3"></div>
+			<div id="aside"></div>
+			<div id="footer"></div>
+		</div>
+	</body>
+</html>
