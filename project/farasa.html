@@ -1,0 +1,950 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-N0MEMBFQ72"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-N0MEMBFQ72');
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <meta name="author" content="Mohamed Eldesouki (@disooqi)"/>
+    <meta name="description" content="Personal Website of Mohamed Eldesouki (@disooqi), Curriculum Vitae, Publications,
+    Research Projects, Blog, Experience, Education, Portfolio ...">
+    <meta name="keywords" content="disooqi, Mohamed Eldesouki, Farasa, QMDIS, Dialectid, ArabAgent, QCRI,
+    Qatar Computing Research Institute, ALT, mohamohamed, Arabic NLP, Natural Language Processing, HBKU">
+    <!--<link rel="icon" type="image/png" href="https://polybit-apps.s3.amazonaws.com/stdlib/users/disooqi/profile/image.png?1555844413267">-->
+
+    <meta property="og:url" content="/project/farasa"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:description"
+          content="Personal Website of Mohamed Eldesouki (@disooqi), Curriculum Vitae, Publications, Research Projects, Blog, Experience, Education, Portfolio ..."/>
+    <meta property="og:image" content="/assets/images/me-03.jpeg"/>
+    <meta property="fb:app_id" content="332122394106516"/>
+
+
+    <!-- Document Title -->
+    
+        <meta property="og:title" content="FARASA (Advanced Tools for Arabic) | Mohamed Eldesouki"/>
+        <title> FARASA (Advanced Tools for Arabic) | Mohamed Eldesouki</title>
+    
+
+    <!-- StyleSheets -->
+    <link rel="apple-touch-icon" sizes="57x57"
+          href="/assets/images/ico/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60"
+          href="/assets/images/ico/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72"
+          href="/assets/images/ico/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76"
+          href="/assets/images/ico/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114"
+          href="/assets/images/ico/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120"
+          href="/assets/images/ico/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144"
+          href="/assets/images/ico/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152"
+          href="/assets/images/ico/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180"
+          href="/assets/images/ico/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"
+          href="/assets/images/ico/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32"
+          href="/assets/images/ico/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96"
+          href="/assets/images/ico/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16"
+          href="/assets/images/ico/favicon-16x16.png">
+    <link rel="manifest" href="/assets/images/ico/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/assets/images/ico/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="/assets/css/ionicons.min.css">
+    <link rel="stylesheet" href="/assets/css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/urgent.css">
+    <link rel="stylesheet" href="/assets/css/responsive.css">
+    <link rel="stylesheet" href="/assets/css/progressbar.css"/>
+    <link rel="stylesheet" href="/assets/css/disooqi.css"/>
+    <link rel="stylesheet" href="/assets/css/edu.css"/>
+
+    <!-- FontsOnline -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <style>
+        #googleScholar {
+            display: none;
+            position: fixed;
+            top: 0;
+            /*{#right: 50%;#}*/
+            z-index: 99;
+            font-size: 18px;
+            border: none;
+            outline: none;
+            background-color: rgba(50, 50, 50, .4);
+            opacity: 0.5;
+            color: black;
+            cursor: pointer;
+            width: 100%;
+            /*{#height: 24px;#}*/
+            border-radius: 0px;
+            /*{#-ms-transform: rotate(90deg); !* IE 9 *!#}*/
+            /*{#transform: rotate(90deg);#}*/
+            /*{#background-image: url("/assets/images/scholar_logo_24dp.png");#}*/
+            /*{# background-repeat: no-repeat;#}*/
+        }
+
+
+        #googleScholar:hover {
+            background-color: #EEE;
+            opacity: 0.9;
+        }
+
+        .cuCourse  {
+            width: 100%;
+            border-collapse: collapse;
+            table-layout: auto;
+        }
+        table, td, th {
+            border-bottom: 3px solid #dddddd;
+        }
+
+        td {
+            line-height: 20px;
+            font-size: 14px !important;
+        }
+        th {
+            background-color: #346abb;
+            color: white;
+            padding: 5px;
+        }
+    </style>
+
+    <!-- JavaScripts -->
+    <script src="/assets/js/vendors/modernizr.js"></script>
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+ <button onclick="window.open('https://scholar.google.com/citations?user=kilUJ5kAAAAJ&hl=en');" id="googleScholar"
+         title="Check the full list of publications at Google Scholar">Check the full list of publications at
+     <img style="margin: 10px;" src="/assets/images/scholar_logo_24dp.png"
+          alt="Google Scholar"/>
+ </button>
+<!-- Page Wrapper -->
+<div id="wrap">
+
+    <!-- Header -->
+    <nav id="cd-lateral-nav">
+        <h5 class="tittle">Extended MENU</h5>
+        <ul class="cd-navigation">
+            <!--<li><a href="index-main.html">Index Main</a></li>-->
+            <!--<li><a href="index-1.html">Index 2</a></li>-->
+            <!--<li><a href="index.html">Index 3</a></li>-->
+            <!--<li><a href="index-3-pages.html">Index Links</a></li>-->
+            <!--<li><a href="about-me.html">About Me</a></li>-->
+            <!--<li><a href="/portfolio">Portfolio</a></li>-->
+            <!--<li><a href="/demos">Demos</a></li>-->
+            <li class="item-has-children">
+                <a class="submenu-open" href="/demos">Demos</a>
+                <ul class="sub-menu" style="display: block;">
+                    <!--<li><a href="/demo/onmt_diacritizer">OpenNMT Diacritizer demo</a></li>-->
+                    <li><a href="//farasa.qcri.org" target="_blank">Farasa Demo</a></li>
+                    <li><a href="//farspeech.qcri.org/" target="_blank">Far-Speech Demo</a></li>
+<!--                 <li><a href="https://mohamed.eldesouki.ca/WISE/" target="_blank">WISE Demo</a></li>-->
+                    <li><a href="//dialectid.qcri.org/" target="_blank">DialectID Demo</a></li>
+                    <li><a href="http://212.71.235.101/class_strength/index.php" target="_blank">class<sup>strength</sup> Demo</a></li>
+                    <!--<li><a href="/demo/dsl_2016_shared_task">DSL 2016 shared task: Sub-task 2: Arabic Dialect#}-->
+                    <!--Identification</a></li>-->
+                    <!--<li><a href="/project/arabagent">ArabAgent Demo</a></li>-->
+                    <!--<li><a href="/demo/ganswer">gAnswer Demo</a></li>-->
+                </ul>
+            </li>
+<!--            {#            <li><a href="#">Teaching</a></li>#}-->
+<!--            {#            <li><a href="#">Blog</a></li>#}-->
+<!--            {#            <li class="item-has-children"><a href="/projects">Research Projects</a>#}-->
+<!--            {#                <ul class="sub-menu">#}-->
+<!--            {#                    <li><a href="/project/farasa">Farasa Project</a></li>#}-->
+<!--            {#                    <li><a href="/project/dialectid">QMDIS Project</a></li>#}-->
+<!--            {#                    <li><a href="/project/buzzdiggr">Buzzdiggr Project</a></li>#}-->
+<!--            {#                    <li><a href="/project/arabagent">ArabAgent Project</a></li>#}-->
+<!--            {#                </ul>#}-->
+<!--            {#            </li>#}-->
+        </ul>
+        </ul>
+    </nav>
+    <!-- End Header -->
+
+    <!-- Content -->
+    <main class="cd-main-content">
+        <div id="content">
+            <div class="resume">
+                <div class="container">
+		              <nav>
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav-tabis" aria-expanded="false"> <span class="tittle">MENU</span> <span class="fa fa-navicon icon-nav"></span> </button>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="nav-tabis">
+      <ul class="isop-filter main-nav">
+          
+
+          <li >
+              <a href="/" ><i class="icon-user"></i>ABOUT ME</a>
+          </li>
+          
+
+          <li >
+              <a href="/resume" ><i class="icon-book-open"></i>RESUME</a>
+          </li>
+          
+
+          <li >
+              <a href="/publications" ><i class="icon-note"></i>PUBLICATIONS</a>
+          </li>
+          
+
+          <li >
+              <a href="/projects" ><i class="icon-rocket"></i>RESEARCH PROJECTS</a>
+          </li>
+          
+
+          <li >
+              <a href="/portfolio" ><i class="icon-badge"></i>PORTFOLIO</a>
+          </li>
+          
+          <li><a id="cd-menu-trigger"class="menu-ext" href="#."><span class="cd-menu-icon"></span></a></li>
+      </ul>
+    </div>
+
+      <div class="urgentBar" data-id="66e6e83d-c7a0-498f-a46f-96dceb240a03" style="display: none;">
+          <div class="container">
+              <div class="row">
+                  <div class="col-lg-11 align-self-center">
+                      <div class=" urgentBar__txt">
+                          <strong>BREAKING:</strong>
+                          <span>Mohamed Eldesouki is a software engineer with senior R&amp;D skills and a wide </span>
+                      </div>
+                  </div>
+                  <img class="urgentBar__close" id="urgentCloseBtn"
+                       src="/assets/img/close_btn.png">
+              </div>
+          </div>
+      </div>
+  </nav>
+
+
+                    <!-- Resume -->
+                    <div class="row">
+
+                        <!-- Sidebar -->
+                        <div class="col-md-4">
+                            <div class="side-bar">
+
+                                <!-- Professional Details -->
+                                <h5 class="tittle">Professional Details</h5>
+                                <img src="/assets/images/me-04.JPG" class="img-responsive"
+                                     alt="">
+
+                                <ul class="personal-info">
+                                    <li style="margin-bottom: 25px;">
+                                        <p style="font-size: 24px !important;"><span> Mohamed Eldesouki</span>
+                                        </p>
+                                        <p><span> <abbr title="Natural Language Processing">NLP</abbr> / <abbr title="Machine Learning">ML</abbr> Engineer </span></p>
+
+                                    </li>
+
+                                    <li>
+                                        <p style="line-height: 20px; font-size: 12px !important;"><span>
+                                            <a href="https://www.concordia.ca/ginacody.html" target="_blank">
+                                            Gina Cody School of Engineering and Computer Science</a>
+                                        </span></p>
+                                        <p>
+                                            <span>Concordia University</span><br/>
+                                            <span>Montreal, QC, Canada</span></p>
+                                        <br/>
+                                    </li>
+                                    <li>
+                                    </li>
+                                    <!--<li>-->
+                                    <!--<p> <span> Degree</span> MSc. in Computer Science </p>-->
+                                    <!--</li>-->
+                                    <!--<li>-->
+                                    <!--<p> <span> Current Employer</span>  </p>-->
+                                    <!--</li>-->
+                                    <li>
+                                        <p><span> Phone</span> +1 (438) 526-8875 </p>
+                                    </li>
+
+                                    <li>
+                                        <p><span>E-Mail</span> mohamed&commat;eldesouki.com</p>
+                                    </li>
+                                    <!-- <li>
+                                        <p><span>Lab</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; EV 9.105 , 1515 St. Catherine
+                                            W. </p>
+                                    </li> -->
+
+                                </ul>
+
+
+                                <!-- Attachments -->
+                                <h5 class="tittle">Attachments</h5>
+                                <div class="attach bor-btm padding-25">
+                                    <ul>
+                                        <li>
+                                            <p><img src="/assets/images/pdf-icon.jpg"
+                                                    alt=""> Curriculum-Vitae.pdf
+                                                <a href="/assets/files/Curriculum_Vitae_241223.pdf"
+                                                   download="Mohamed-Eldesouki-CV.pdf">
+                                                    <i class="fa fa-cloud-download"></i>
+                                                </a>
+                                                <a href="/assets/files/Curriculum_Vitae_241223.pdf"
+                                                   target="_blank">
+                                                    <i class="fa fa-eye"></i>
+                                                </a>
+                                            </p>
+                                        </li>
+                                        <!--<li>-->
+                                        <!--<p><img src="images/word-icon.jpg" alt="" > COE.docx <a href="#."><i class="fa fa-cloud-download"></i></a> <a href="#."><i class="fa fa-eye"></i></a></p>-->
+                                        <!--</li>-->
+                                    </ul>
+                                </div>
+
+
+                                <!-- Social Profiles -->
+                                <h5 class="tittle">Social Profiles</h5>
+                                <div class="social-icon bor-btm padding-25">
+                                    <ul>
+                                        <li>
+                                            <a href="//github.com/disooqi" target="_blank">
+                                                <i class="fa fa-github"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="//scholar.google.com/citations?user=kilUJ5kAAAAJ&hl=en"
+                                               target="_blank">
+                                                <img style="height: 50%; padding: 0;margin: 0;"
+                                                     src="/assets/images/gs-icon-7.png">
+                                            </a>
+                                        </li>
+                                        <!--<li> <a href="#."> <i class="fa fa-twitter"></i></a> </li>-->
+                                        <li>
+                                            <a href="//www.linkedin.com/in/disooqi/" target="_blank">
+                                                <i class="fa fa-linkedin"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="//join.skype.com/invite/gGxWGgHyq5Le" target="_blank">
+                                                <i class="fa fa-skype"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- Contact Me -->
+<!--                                <h5 class="tittle">Contact Me</h5>-->
+<!--                                <div class="contact padding-25">-->
+<!--                                    &lt;!&ndash; Success Msg &ndash;&gt;-->
+<!--                                    <div id="contact_message" class="success-msg"><i class="fa fa-paper-plane-o"></i>Thank-->
+<!--                                        You. Your Message has been Submitted-->
+<!--                                    </div>-->
+
+<!--                                    &lt;!&ndash; FORM &ndash;&gt;-->
+<!--                                    <form role="form" id="contact_form" class="contact-form" method="post"-->
+<!--                                          onSubmit="return false">-->
+<!--                                        <ul class="row">-->
+<!--                                            <li class="col-sm-12">-->
+<!--                                                <label>-->
+<!--                                                    <input type="text" class="form-control" name="email" id="email"-->
+<!--                                                           placeholder="Email" disabled>-->
+<!--                                                </label>-->
+<!--                                            </li>-->
+<!--                                            <li class="col-sm-12">-->
+<!--                                                <label>-->
+<!--                                                    <input type="text" class="form-control" name="company" id="company"-->
+<!--                                                           placeholder="Subject" disabled>-->
+<!--                                                </label>-->
+<!--                                            </li>-->
+<!--                                            <li class="col-sm-12">-->
+<!--                                                <label>-->
+<!--                                                    <textarea class="form-control" name="message" id="message" rows="5"-->
+<!--                                                              placeholder="Message" disabled></textarea>-->
+<!--                                                </label>-->
+<!--                                            </li>-->
+<!--                                            <li class="col-sm-12">-->
+<!--                                                <button class="" type="submit" value="submit" id="btn_submit"-->
+<!--                                                        onClick="proceed();" disabled="disabled">Send Message-->
+<!--                                                </button>-->
+<!--                                            </li>-->
+<!--                                        </ul>-->
+<!--                                    </form>-->
+<!--                                </div>-->
+                            </div>
+                        </div>
+                        <!-- MAIN CONTENT -->
+<div class="col-md-8">
+    <div class="inside-sec blog">
+        <!-- BIO AND SKILLS -->
+        <h5 class="tittle"><a href="/projects" class="disooqi"> Projects</a> &gt; Farasa</h5>
+
+        <!-- Blog -->
+        <article class="blog-post width-100 padding-25">
+            <!--<div class="post-img">-->
+            <!--&lt;!&ndash;<img src="images/img-1.jpg" alt=""> &ndash;&gt;-->
+            <!--<span class="date-in">27 JAN</span>-->
+            <!--</div>-->
+
+            <!--&lt;!&ndash; BLOG DETAIL &ndash;&gt;-->
+            <!--<h4 class="font-normal">Faster Response</h4>-->
+            <!--<span class="post-bt">by <span class="text-color-primary">Admin</span></span>-->
+            <!--<ul class="post-info">-->
+            <!--<li><i class="fa fa-comments-o"></i>97</li>-->
+            <!--<li><i class="fa fa-eye"></i>565</li>-->
+            <!--<li><i class="fa fa-bookmark-o"></i>Photography</li>-->
+            <!--<li></li>-->
+            <!--</ul>-->
+            <p style="">Farasa project has taken place within the
+                <a class="disooqi" href="//alt.qcri.org" target="_blank">Arabic Language Technology Group</a> at
+                <a class="disooqi" href="//qcri.org.qa" target="_blank">Qatar Computing Research Institute
+                    (QCRI)</a>. I worked mainly to build a word segmentation and a POS tagger for dialectal Arabic.
+
+
+            </p>
+            <p style="">
+                The main theme of Farasa is to be fast, accurate and reliable tool to
+                process Modern Standard Arabic (MSA) and its different dialects. Therefore, I have heavily depended on
+                statistical approaches to build the different modules of Farasa.
+
+            </p>
+            <h5 class="margin-top-20 margin-bottom-0">Word Segmentation</h5>
+            <p style="">
+                I first began to tackle each dialect separately. Starting with Egyptian dialect, I have to deal with the
+                following challenges:
+            </p>
+            <ul class="disooqi">
+                <li><i class="fa fa-chevron-circle-right"></i> scarcity of annotated data, and</li>
+                <li><i class="fa fa-chevron-circle-right"></i> Lack of spelling standard (dialectal Arabic is usually
+                    spoken and used in informal communications).
+                </li>
+            </ul>
+            <br/>
+            <p class="disooqi">
+                I have used a dataset collected originally for the task dialect identification and manually annotated
+                myself with segmentation
+                information. The dataset contains 350 tweets with more than 8000 words including 3000 unique words.The
+                tweets
+                have much dialectal content covering most of dialectal Egyptian phonological, morphological, and
+                syntactic phenomena.
+                <br/>
+                <br/>
+
+            </p>
+
+
+            <!--<br/>-->
+            <!--<p style="font-size: 16px;">-->
+
+            <!--</p>-->
+
+            <!--<blockquote class="margin-top-30">“Sensibus oportere signiferumque id mea. At usu lucilius phaedrum, vix-->
+            <!--oratio epicurei ne. Eripuit conceptam sea cu, ius minim delectus euripidis cu. Probo nonumy gubergren id-->
+            <!--nec. In est probo ridens, his laoreet euripidis et.”-->
+            <!--</blockquote>-->
+            <p>
+                I have built a dialectal Egyptian segmentater that utilizes Bidirectional Long-Short-Term-Memory
+                (BiLSTM)
+                that is trained on limited dialectal data. The approach was motivated by the scarcity of
+                dialectal tools and resources. The main contribution is that we build a segmenter
+                of dialectal Egyptian using limited data without the need for specialized lexical resources or
+                deep linguistic knowledge that rivals state-of-the-art tools.
+                <br/>
+
+            </p>
+            <div class="row">
+                <div class="col-md-6">
+                    <p>
+                        The lack of lexical and linguistic resources have derived me to consider the Arabic word
+                        segmentation as
+                        a character-based sequence classification problem and to use 200-dimensional pre-trained
+                        character
+                        embeddings to initialize the lookup table. Each character is labeled as one of the five labels
+                        B,M,E,S,WB that designate the segmentation decision boundary. B, M, E,WB represent Beginning,
+                        Middle, End of a multi-character seg-ent, Single character segment, and Word Boundary
+                        respectively.
+                        <br>
+                        <br>
+                        The results show that for this small testset BiLSTM-CRF (92.65%) performs better than MADAMIRA
+
+                    </p>
+                </div>
+                <div class="col-md-6"><img class="img-responsive margin-top-10"
+                                           src="/assets/images/char_seg_lstm_crf_last.png"
+                                           alt=""></div>
+            </div>
+            <p class="">
+                (92.47%) by only 0.18% which is not statistically significant. The advantage of my system is
+                that, unlike MADAMIRA which relies on a hand-crafted lexicon, our system generalizes well on unseen
+                data. To
+            </p>
+            <div class="row">
+                <div class="col-md-6"><img class="img-responsive margin-top-10"
+                                           src="/assets/images/farasa-1.png"
+                                           alt="">
+                </div>
+                <div class="col-md-6">
+                    <p>
+                        illustrate this point, the test set has 1,449 words, and 586 of them (40%)are not seen in the
+                        training set.
+                        This shows how well the system is robust with OOV words.
+
+                        <br>
+                        <br>
+                    </p>
+
+                    <br/>
+
+                </div>
+
+            </div>
+            <h5 class="margin-top-30 margin-bottom-0">Extending for more dialects (Levantine, Moroccan, Gulf, and
+                MSA)</h5>
+            <p>
+                Following the same approach, I have trained 3 models with tweets written in 3 other dialects, namely
+                Levantine, Moroccan, and Gulf. In addition to the three dialects I also trained an extra model for MSA.
+                This time I had compared the
+                LSTM model for each dialect to an SVM model that is trained on the following features:
+            </p>
+            <ul class="disooqi">
+                <li><i class="fa fa-chevron-circle-right"></i> Conditional probability that a leading char sequence is a
+                    prefix
+                </li>
+                <li><i class="fa fa-chevron-circle-right"></i> CP that a trailing char sequence is a suffix</li>
+                <li><i class="fa fa-chevron-circle-right"></i> probability of the prefix given the suffix</li>
+                <li><i class="fa fa-chevron-circle-right"></i> probability of the suffix given the prefix</li>
+                <li><i class="fa fa-chevron-circle-right"></i> unigram probability of the stem</li>
+                <li><i class="fa fa-chevron-circle-right"></i> unigram probability of the stem with first suffix</li>
+                <li><i class="fa fa-chevron-circle-right"></i> whether a valid stem template can be obtained from the
+                    stem
+                </li>
+                <li><i class="fa fa-chevron-circle-right"></i> whether the stem that has no trailing suffixes appears in
+                    a gazetteer of person and location names
+                </li>
+                <li><i class="fa fa-chevron-circle-right"></i> whether the stem is a function word</li>
+                <li><i class="fa fa-chevron-circle-right"></i> whether the stem appears in the AraComLex Arabic Lexicon
+                </li>
+                <li><i class="fa fa-chevron-circle-right"></i> length difference from the average stem length</li>
+
+            </ul>
+            <img class="img-responsive margin-top-10"
+                 src="/assets/images/farasa-2.png"
+                 alt="">
+            <p>
+                The above table reports on the results for both segmentation approaches and in combination of using
+                different lookup schemes. As the results clearly shows, using an MSA segmenter yields suboptimal results
+                for dialects. Also, when no lookup is used, the bi-LSTM-CRF sequence labeler performs better than the
+                SVM ranker for all dialects. However, using lookup leads to greater improvements for the SVM approach
+                leading to the best results for Levantine, Gulf, and Maghrebi and slightly lower results for Egyptian.
+                Further, SVM<sup>Rank</sup> seemed to have benefited more from the DA lookup, while bi-LSTM-CRF
+                benefited more
+                from the MSA lookup.
+                <br>
+                <br>
+                As for Egyptian segmentation, we suspected that it performed better for both approaches than the
+                segmentation for the other dialects, because the percentage of test words that appear in the training
+                set was greater for Egyptian.
+            </p>
+            <h5 class="margin-top-30 margin-bottom-0">Learning from Relatives</h5>
+            <p>
+                I have observed that there are shared pan-dialectal linguistic phenomena that allow computational models
+                for
+                dialects to learn from each other. Accordingly, I built a unified segmentation model where the training
+                data for different dialects are combined and a single model is trained.
+            </p>
+            <img class="img-responsive margin-top-10"
+                 src="/assets/images/farasa-3.png"
+                 alt="">
+            <p>
+                The results show improvements for all dialects, but aside for EGY, the improvements do not lead to
+                better results than those for single dialect models. Conversely, the bi-LSTM-CRF joint model with DA+MSA
+                lookup beats every other experimental setup that we tested, leading to the best segmentation results for
+                all dialects, without doing dialect identification. This may indicate that bi-LSTM-CRF benefited from
+                cross-dialect data in improving segmentation for individual dialects.
+            </p>
+            <h5 class="margin-top-30 margin-bottom-0">Publications</h5>
+            <!-- Publications -->
+            <div class="panel-group accordion padding-20" id="accordion">
+                <div class="panel panel-default">
+                    <div class="row">
+                        <div class="col-sm-1">
+                            <!-- PANEL HEADING -->
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#accordion3" href="#paper02"
+                                       class="collapsed"> Photoshop</a>
+                                </h4>
+                            </div>
+                        </div>
+
+                        <!-- Skillls Bars -->
+                        <div class="col-sm-11">
+                            <p>Kareem Darwish, Hamdy Mubarak,
+                                <strong>Mohamed Eldesouki</strong>
+                                , Ahmed Abdelali, Younes
+                                Samih, Randah Alharbi, Mohammed Attia, Walid Magdy, and Laura Kallmeyer, (2018),
+                                <i>Multi-Dialect Arabic POS Tagging: A CRF Approach</i>
+                                , In <strong>the 11th edition of the Language
+                                    Resources and Evaluation Conference (LREC)</strong>, 7-12 May 2018, Miyazaki
+                                (Japan).</p>
+
+                            <!--<div class="progress">-->
+                            <!--<div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;"> <span class="sr-only">60% Complete</span> </div>-->
+                            <!--</div>-->
+
+                            <!-- Skillls Text -->
+                            <div id="paper02" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <p>
+                                        <a href="https://github.com/qcri/dialectal_arabic_pos_tagger" target="_blank"
+                                           class="btn btn-danger">
+                                            <i class="fa fa-github"></i> Code
+                                        </a>
+                                        <a href="http://www.lrec-conf.org/proceedings/lrec2018/pdf/562.pdf"
+                                           target="_blank" class="btn btn-success">
+                                            <i class="fa fa-file-pdf-o"></i> Paper
+                                        </a>
+
+                                        <!--<a href="#" class="btn btn-success"><i class="fa fa-file-pdf-o"></i> Paper</a>-->
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="row">
+                        <div class="col-sm-1">
+                            <!-- PANEL HEADING -->
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#accordion4" href="#paper-2017-1"
+                                       class="collapsed"> Photoshop</a>
+                                </h4>
+                            </div>
+                        </div>
+
+                        <!-- Skillls Bars -->
+                        <div class="col-sm-11">
+                            <p>Younes Samih,
+                                <strong>Mohamed Eldesouki</strong>
+                                , Mohammed Attia,Kareem Darwish, Ahmed Abdelali, Hamdy Mubarak and Laura Kallmeyer,
+                                (2017),
+                                <i>Learning from Relatives: Unified
+                                    Dialectal Arabic Segmentation</i>
+                                . In <strong>Proceedings of the 21st Conference on Computational
+                                    Natural Language Learning (CoNLL 2017)</strong>, Vancouver, Canada, 432-441.</p>
+
+                            <!--<div class="progress">-->
+                            <!--<div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;"> <span class="sr-only">60% Complete</span> </div>-->
+                            <!--</div>-->
+
+                            <!-- Skillls Text -->
+                            <div id="paper-2017-1" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <p>
+                                        <a href="https://github.com/qcri/dialectal_arabic_tools" target="_blank"
+                                           class="btn btn-danger">
+                                            <i class="fa fa-github"></i> Code
+                                        </a>
+                                        <a href="http://www.aclweb.org/anthology/K17-1043"
+                                           target="_blank" class="btn btn-success">
+                                            <i class="fa fa-file-pdf-o"></i> Paper
+                                        </a>
+
+                                        <!--<a href="#" class="btn btn-success"><i class="fa fa-file-pdf-o"></i> Paper</a>-->
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="row">
+                        <div class="col-sm-1">
+                            <!-- PANEL HEADING -->
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#accordion4" href="#paper-2017-3"
+                                       class="collapsed"> Photoshop</a>
+                                </h4>
+                            </div>
+                        </div>
+
+                        <!-- Skillls Bars -->
+                        <div class="col-sm-11">
+                            <p><strong>Mohamed Eldesouki</strong>
+                                , Younes Samih, Ahmed Abdelali, Mohammed Attia, Hamdy
+                                Mubarak, Kareem Darwish and Kallmeyer Laura, (2017),
+                                <strong>Arabic Multi-Dialect Segmentation: bi-LSTM-CRF vs. SVM</strong>
+                                ,
+                                <a href="http://arxiv.org/abs/1708.05891" target="_blank" class="btn-link">
+                                    http://arxiv.org/abs/1708.05891</a>
+                            </p>
+                            <!-- Skillls Text -->
+                            <div id="paper-2017-3" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <p>
+                                        <a href="http://github.com/qcri/dialectal_arabic_tools" target="_blank"
+                                           class="btn btn-danger">
+                                            <i class="fa fa-github"></i> Code
+                                        </a>
+                                        <a href="http://arxiv.org/abs/1708.05891"
+                                           target="_blank" class="btn btn-success">
+                                            <i class="fa fa-file-pdf-o"></i> Paper
+                                        </a>
+
+                                        <!--<a href="#" class="btn btn-success"><i class="fa fa-file-pdf-o"></i> Paper</a>-->
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="row">
+                        <div class="col-sm-1">
+                            <!-- PANEL HEADING -->
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#accordion4" href="#paper-2017-4"
+                                       class="collapsed"> Photoshop</a>
+                                </h4>
+                            </div>
+                        </div>
+
+                        <!-- Skillls Bars -->
+                        <div class="col-sm-11">
+                            <p>
+                                Younes Samih, Mohammed Attia,
+                                <strong>Mohamed Eldesouki</strong>
+                                , Ahmed Abdelali, Hamdy
+                                Mubarak, Laura Kallmeyer and Kareem Darwish, (2017),
+                                <i>A Neural Architecture for Dialectal Arabic Segmentation</i>
+                                . In <strong>Proceedings of The 3rd Arabic Natural Language Processing
+                                Workshop (WANLP-2017) co-located with EACL 2017</strong>, Valencia, Spain, pages 46-54.
+                            </p>
+                            <!-- Skillls Text -->
+                            <div id="paper-2017-4" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <p>
+                                        <a href="http://github.com/qcri/dialectal_arabic_tools" target="_blank"
+                                           class="btn btn-danger">
+                                            <i class="fa fa-github"></i> Code
+                                        </a>
+                                        <a href="http://www.aclweb.org/anthology/W17-1306"
+                                           target="_blank" class="btn btn-success">
+                                            <i class="fa fa-file-pdf-o"></i> Paper
+                                        </a>
+
+                                        <!--<a href="#" class="btn btn-success"><i class="fa fa-file-pdf-o"></i> Paper</a>-->
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="row">
+                        <div class="col-sm-1">
+                            <!-- PANEL HEADING -->
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#accordion4" href="#paper-2017-5"
+                                       class="collapsed"> Photoshop</a>
+                                </h4>
+                            </div>
+                        </div>
+
+                        <!-- Skillls Bars -->
+                        <div class="col-sm-11">
+                            <p>
+                                Kareem Darwish, Hamdy Mubarak, Ahmed Abdelali and
+                                <strong>Mohamed Eldesouki</strong>
+                                , (2017),
+                                <i>Arabic POS Tagging: Don’t Abandon Feature Engineering Just Yet</i>
+                                , In <strong>Proceedings of The 3rd
+                                Arabic NLP Workshop (WANLP-2017) co-located with EACL 2017</strong>, Valencia, Spain, P.
+                                130.
+                            </p>
+                            <!-- Skillls Text -->
+                            <div id="paper-2017-5" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <p>
+                                        <a href="http://www.aclweb.org/anthology/W17-1316"
+                                           target="_blank" class="btn btn-success">
+                                            <i class="fa fa-file-pdf-o"></i> Paper
+                                        </a>
+
+                                        <!--<a href="#" class="btn btn-success"><i class="fa fa-file-pdf-o"></i> Paper</a>-->
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!--<div class="auther-name text-center margin-top-50">-->
+            <!--<h6 class="font-12px margin-top-20 margin-bottom-10">WHITE SHADOW WALKER</h6>-->
+            <!--<span class="font-16px font-crimson font-italic">Writer/Personal blog</span>-->
+            <!--</div>-->
+
+
+            <!--<div class="next-prev">-->
+            <!--<div class="row">-->
+            <!--<div class="col-md-6 text-left"><a href="#." class="font-16px font-crimson text-uppercase"><i-->
+            <!--class="fa fa-long-arrow-left margin-right-15"></i> PREVIOUS Article</a></div>-->
+            <!--<div class="col-md-6 text-right"><a href="#." class="font-16px font-crimson text-uppercase">Next-->
+            <!--Article<i class="fa fa-long-arrow-right margin-left-15"></i></a></div>-->
+            <!--</div>-->
+            <!--</div>-->
+
+
+            <!--<div class="comments">-->
+
+            <!--&lt;!&ndash; Main Heading &ndash;&gt;-->
+            <!--<div class="heading-side-bar margin-bottom-50 margin-top-100">-->
+            <!--<h4>Comment (37)</h4>-->
+            <!--</div>-->
+            <!--<ul>-->
+
+            <!--&lt;!&ndash; Comments &ndash;&gt;-->
+            <!--<li class="margin-bottom-30">-->
+            <!--<div class="media">-->
+            <!--<div class="media-left">-->
+            <!--<div class="avatar"><img src="images/avatar-1.jpg" alt=""></div>-->
+            <!--</div>-->
+            <!--<div class="media-body">-->
+            <!--<div class="a-com"><span class="a-name text-color-primary">JAMMIE LANDING </span><span-->
+            <!--class="date">24.03.2015 at 10:21</span>-->
+            <!--<p class="margin-top-20">“Quando feugait duo ei, te erant corpora interpretaris eos.-->
+            <!--Illud accommodare vituperatoribus an mea. Erat mazim animal-->
+            <!--at nam, eam te doctus evertitur, sed decore ornatus”</p>-->
+            <!--<a href="#." class="text-right"> REPLAY <i class="fa fa-reply"></i></a></div>-->
+            <!--</div>-->
+            <!--</div>-->
+            <!--</li>-->
+
+            <!--&lt;!&ndash; Comments Replay &ndash;&gt;-->
+            <!--<li class="com-reply">-->
+            <!--<div class="media">-->
+            <!--<div class="media-left">-->
+            <!--<div class="avatar"><img src="images/avatar-2.jpg" alt=""></div>-->
+            <!--</div>-->
+            <!--<div class="media-body">-->
+            <!--<div class="a-com"><span class="a-name ">JAMMIE LANDING </span><span class="date">24.03.2015 at 10:21</span>-->
+            <!--<p class="margin-top-20">“Quando feugait duo ei, te erant corpora interpretaris eos.-->
+            <!--Illud accommodare vituperatoribus an mea. Erat mazim animal-->
+            <!--at nam, eam te doctus evertitur, sed decore ornatus”</p>-->
+            <!--<a href="#." class="text-right"> REPLAY <i class="fa fa-reply"></i></a></div>-->
+            <!--</div>-->
+            <!--</div>-->
+            <!--</li>-->
+            <!--<li class="text-center more-comments"><a href="#.">MORE COMMENT <i class="fa fa-angle-down"></i></a>-->
+            <!--</li>-->
+            <!--</ul>-->
+
+            <!--&lt;!&ndash; Comments Form &ndash;&gt;-->
+            <!--<div class="comment-form">-->
+            <!--&lt;!&ndash; Main Heading &ndash;&gt;-->
+            <!--<div class="heading-side-bar margin-bottom-50 margin-top-80">-->
+            <!--<h4>Post to Reply</h4>-->
+            <!--</div>-->
+            <!--<form>-->
+            <!--<ul class="row">-->
+            <!--<li class="col-sm-4">-->
+            <!--<label>*NAME-->
+            <!--<input class="form-control" type="text" placeholder="">-->
+            <!--</label>-->
+            <!--</li>-->
+            <!--<li class="col-sm-4">-->
+            <!--<label>*EMAIL ADDRESS-->
+            <!--<input class="form-control" type="text" placeholder="">-->
+            <!--</label>-->
+            <!--</li>-->
+            <!--<li class="col-sm-4">-->
+            <!--<label> WEBSITE-->
+            <!--<input class="form-control" type="text" placeholder="">-->
+            <!--</label>-->
+            <!--</li>-->
+            <!--<li class="col-sm-12">-->
+            <!--<label> SUBJECT-->
+            <!--<input class="form-control" type="text" placeholder="">-->
+            <!--</label>-->
+            <!--</li>-->
+            <!--<li class="col-sm-12">-->
+            <!--<textarea placeholder="YOUR MESSAGE"></textarea>-->
+            <!--</li>-->
+            <!--<li class="col-sm-12">-->
+            <!--<button type="submit" class="btn btn-dark">POST COMMENT</button>-->
+            <!--</li>-->
+            <!--</ul>-->
+            <!--</form>-->
+            <!--</div>-->
+            <!--</div>-->
+
+
+        </article>
+    </div>
+</div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- End Content -->
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="rights">
+            <p>© Copyright 2024 Mohamed Eldesouki. All right reserved.</p>
+        </div>
+    </footer>
+    <!-- End Footer -->
+
+</div>
+<!-- End Page Wrapper -->
+
+<!-- JavaScripts -->
+<script src="/assets/js/vendors/jquery/jquery.min.js"></script>
+<script src="/assets/js/vendors/bootstrap.min.js"></script>
+<script src="/assets/js/vendors/owl.carousel.min.js"></script>
+<script src="/assets/js/vendors/jquery.isotope.min.js"></script>
+<script src="/assets/js/main.js"></script>
+
+<!-- Begin Map Script-->
+<script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+<script src="/assets/js/vendors/map.js"></script>
+
+<script>
+
+    // Since there are 2 iframes in the page, we must pass an ID for the current iframe
+    setInterval(function () {
+        window.top.postMessage(document.body.scrollHeight + '-' + 'iframe1', "*");
+    }, 500);
+
+</script>
+</body>
+</html>
